@@ -26,7 +26,7 @@ import vista.seguridad.MantenimientoRelPerfApl;
 import vista.seguridad.MantenimientoRelPerfUsu;
 import vista.compras_cxp.MantenimientoProveedores;
 import vista.compras_cxp.MantenimientoMetododePago;
-import vista.compras_cxp.MantenimientoVendedores;
+import vista.compras_cxp.MantenimientoBodega;
 //import extras para seguridad hecho por: Pablo Palencia
 import Modelo.seguridad.RelPerfUsuDAO;
 import Controlador.seguridad.RelPerfUsu;
@@ -145,8 +145,6 @@ public class MdiREPASO extends javax.swing.JFrame {
         MetodoDePago = new javax.swing.JButton();
         jLabel2 = new javax.swing.JLabel();
         panel4 = new java.awt.Panel();
-        Proveedores = new javax.swing.JButton();
-        jLabel3 = new javax.swing.JLabel();
         panel5 = new java.awt.Panel();
         Bitacora = new javax.swing.JButton();
         jLabel4 = new javax.swing.JLabel();
@@ -237,37 +235,15 @@ public class MdiREPASO extends javax.swing.JFrame {
 
         panel4.setBackground(new java.awt.Color(255, 255, 102));
 
-        Proveedores.setFont(new java.awt.Font("Barlow Condensed ExtraLight", 1, 18)); // NOI18N
-        Proveedores.setText("Proveedores");
-        Proveedores.setEnabled(false);
-        Proveedores.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                ProveedoresActionPerformed(evt);
-            }
-        });
-
-        jLabel3.setFont(new java.awt.Font("Tw Cen MT Condensed Extra Bold", 0, 32)); // NOI18N
-        jLabel3.setForeground(new java.awt.Color(0, 51, 153));
-        jLabel3.setText("Mantenimiento");
-
         javax.swing.GroupLayout panel4Layout = new javax.swing.GroupLayout(panel4);
         panel4.setLayout(panel4Layout);
         panel4Layout.setHorizontalGroup(
             panel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panel4Layout.createSequentialGroup()
-                .addContainerGap(75, Short.MAX_VALUE)
-                .addGroup(panel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(jLabel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(Proveedores, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addGap(37, 37, 37))
+            .addGap(0, 288, Short.MAX_VALUE)
         );
         panel4Layout.setVerticalGroup(
             panel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panel4Layout.createSequentialGroup()
-                .addComponent(jLabel3)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(Proveedores, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(25, 25, 25))
+            .addGap(0, 127, Short.MAX_VALUE)
         );
 
         panel5.setBackground(new java.awt.Color(255, 255, 102));
@@ -495,41 +471,9 @@ public class MdiREPASO extends javax.swing.JFrame {
         ventana.setVisible(true);
     }//GEN-LAST:event_BitacoraActionPerformed
 
-    private void ProveedoresActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ProveedoresActionPerformed
-        // TODO add your handling code here:
-        MantenimientoProveedores ventana = new MantenimientoProveedores();
-        jDesktopPane1.add(ventana);
-        ventana.setVisible(true);
-        Dimension desktopSize = jDesktopPane1.getSize();
-        Dimension FrameSize = ventana.getSize();
-        ventana.setLocation((desktopSize.width - FrameSize.width) / 2, (desktopSize.height - FrameSize.height) / 2);
-        
-        //Seguridad.Verifica los derechos a los que tiene acceso. Hecho por Pablo Palencia
-        /*if("1".equals(reg)){
-            ventana.habilitarRegistrar(true);
-        } else {
-            ventana.habilitarRegistrar(false); 
-        }
-        if("1".equals(eli)){
-            ventana.habilitarEliminar(true);
-        } else {
-            ventana.habilitarEliminar(false);
-        }
-        if("1".equals(mod)){
-            ventana.habilitarModificar(true);
-        } else {
-            ventana.habilitarModificar(false);
-        }
-        if("1".equals(bus)){
-            ventana.habilitarBuscar(true);
-        } else {
-            ventana.habilitarBuscar(false);
-        }*/
-    }//GEN-LAST:event_ProveedoresActionPerformed
-
     private void MetodoDePagoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MetodoDePagoActionPerformed
         // TODO add your handling code here:
-        MantenimientoVendedores ventana = new MantenimientoVendedores();
+        MantenimientoBodega ventana = new MantenimientoBodega();
         jDesktopPane1.add(ventana);
         Dimension desktopSize = jDesktopPane1.getSize();
         Dimension FrameSize = ventana.getSize();
@@ -688,13 +632,11 @@ public class MdiREPASO extends javax.swing.JFrame {
     private javax.swing.JButton Ayudabtn;
     private javax.swing.JButton Bitacora;
     private javax.swing.JButton MetodoDePago;
-    private javax.swing.JButton Proveedores;
     private javax.swing.JButton Sistema;
     private javax.swing.JLabel fondo;
     private javax.swing.JDesktopPane jDesktopPane1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLayeredPane jLayeredPane1;
