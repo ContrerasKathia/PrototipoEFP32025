@@ -1,0 +1,29 @@
+commit a585824919d75e63be9d4e41b1fd455cd05e61d1
+Author: ContrerasKathia <kcontrerasr3@miumg.edu.gt>
+Date:   Thu Jun 5 13:20:55 2025 -0600
+
+    subiendo ayudas
+
+commit 626e68515b8971f84d837b5298d5dde30339344e
+Author: ContrerasKathia <kcontrerasr3@miumg.edu.gt>
+Date:   Thu Jun 5 13:08:38 2025 -0600
+
+    subiendo reportes
+
+commit 346d5e1508abb42d2b59465bdc36275e9e5d025c
+Author: ContrerasKathia <kcontrerasr3@miumg.edu.gt>
+Date:   Thu Jun 5 12:57:02 2025 -0600
+
+    subiendo contenedor
+
+commit ecc003e13bc76aa10520c38cce3d3bf9ec2a8928
+Author: ContrerasKathia <kcontrerasr3@miumg.edu.gt>
+Date:   Thu Jun 5 11:53:08 2025 -0600
+
+    subiendo main
+
+commit e3423a822945b922383cf5b9c43fb0240f201c61
+Author: ContrerasKathia <kcontrerasr3@miumg.edu.gt>
+Date:   Thu Jun 5 11:49:55 2025 -0600
+
+    subiendo ldd
