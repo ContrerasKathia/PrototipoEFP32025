@@ -1,0 +1,8 @@
+CREATE TABLE IF NOT EXISTS bodega(
+    pkid VARCHAR(15),
+    tipobodega VARCHAR(15),
+    nombre VARCHAR (30),
+    direccion VARCHAR (65),
+    estado VARCHAR (1),
+  	PRIMARY KEY (pkid)
+) ENGINE = INNODB CHARSET =latin1;
