@@ -156,7 +156,7 @@ public class MantenimientoBodega extends javax.swing.JInternalFrame {
         setIconifiable(true);
         setMaximizable(true);
         setResizable(true);
-        setTitle("Mantenimiento Proveedores");
+        setTitle("Mantenimiento Bodegas");
         setVisible(true);
 
         btnEliminar.setText("Eliminar");
@@ -239,7 +239,6 @@ public class MantenimientoBodega extends javax.swing.JInternalFrame {
         jLabel3.setText("ID");
 
         txtReporte.setText("Reporte");
-        txtReporte.setEnabled(false);
         txtReporte.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txtReporteActionPerformed(evt);
@@ -518,15 +517,15 @@ public class MantenimientoBodega extends javax.swing.JInternalFrame {
     
     //Boton reporte
     private void txtReporteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtReporteActionPerformed
-       /* //Instancia del proveedordao
-        ProveedorDAO proveedorDAO = new ProveedorDAO();
+        //Instancia del proveedordao
+        BodegaDAO bodegaDAO = new BodegaDAO();
         //Se llama el metodo para imprimir un reporte
-        proveedorDAO.imprimirReporte(); 
+        bodegaDAO.imprimirReporte(); 
         
         UsuarioConectado usuarioEnSesion = new UsuarioConectado();
         int resultadoBitacora=0;
         Bitacora bitacoraRegistro = new Bitacora();
-        resultadoBitacora = bitacoraRegistro.setIngresarBitacora(usuarioEnSesion.getIdUsuario(), APLICACION,  "Visualizar reporte Proveedores");*/
+        resultadoBitacora = bitacoraRegistro.setIngresarBitacora(usuarioEnSesion.getIdUsuario(), APLICACION,  "Visualizar reporte Bodega");
     }//GEN-LAST:event_txtReporteActionPerformed
     
     //Boton ayuda

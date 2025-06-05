@@ -259,7 +259,7 @@ public class BodegaDAO {
         //return vendedores;  // Si se utiliza un ArrayList
         return bodega;
     }
-    /*public void imprimirReporte() {
+    public void imprimirReporte() {
        //Conexion con la base de datos
         Connection conn = null;
         // Mapa de parámetros que se puede enviar al reporte (aquí está vacío)
@@ -273,17 +273,17 @@ public class BodegaDAO {
             //Conexion con la base de datos
             conn = Conexion.getConnection();
             report = JasperCompileManager.compileReport(new File("").getAbsolutePath()
-                    + "/src/main/java/reportes_compras_cxp/"+ "ReporteMetodoDePago.jrxml");
+                    + "/src/main/java/reportes_compras_cxp/"+ "ReporteBodega.jrxml");
             //se llena el reporte con los datos obtenidos
             print = JasperFillManager.fillReport(report, p, conn);
             JasperViewer view = new JasperViewer(print, false);
-            view.setTitle("Reporte de Vendedores");
+            view.setTitle("Reporte de Bodegas");
             view.setVisible(true);
 
         } catch (Exception e) {
             // Si ocurre cualquier error, se imprime la traza del error en consola
             e.printStackTrace();
         }
-    }*/
+    }
         
 }
