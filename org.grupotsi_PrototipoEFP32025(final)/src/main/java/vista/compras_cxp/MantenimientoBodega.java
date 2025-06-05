@@ -535,10 +535,10 @@ public class MantenimientoBodega extends javax.swing.JInternalFrame {
        
         try {
             //Verificacion si el archivo de ayuda existe
-            if ((new File("src\\main\\java\\ayudas\\ayudasComprasyCuentasPorPagar.chm")).exists()) {
+            if ((new File("src\\main\\java\\ayudas\\AyudaBodega.chm")).exists()) {
                 Process p = Runtime
                         .getRuntime()
-                        .exec("rundll32 url.dll,FileProtocolHandler src\\main\\java\\ayudas\\ayudasComprasyCuentasPorPagar.chm");
+                        .exec("rundll32 url.dll,FileProtocolHandler src\\main\\java\\ayudas\\AyudaBodega.chm");
                 p.waitFor();
             } else {
                 //Muestra mensaje en consola si no se encuentra el archivo de ayuda

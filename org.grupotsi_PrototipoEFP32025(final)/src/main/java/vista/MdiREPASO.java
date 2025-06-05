@@ -202,7 +202,7 @@ public class MdiREPASO extends javax.swing.JFrame {
         panel1.setBackground(new java.awt.Color(255, 255, 102));
 
         MetodoDePago.setFont(new java.awt.Font("Barlow Condensed ExtraLight", 1, 18)); // NOI18N
-        MetodoDePago.setText("VENDEDORES");
+        MetodoDePago.setText("Bodega");
         MetodoDePago.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 MetodoDePagoActionPerformed(evt);

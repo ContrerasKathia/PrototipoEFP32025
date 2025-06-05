@@ -215,7 +215,7 @@
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Barlow Condensed ExtraLight" size="18" style="1"/>
                 </Property>
-                <Property name="text" type="java.lang.String" value="VENDEDORES"/>
+                <Property name="text" type="java.lang.String" value="Bodega"/>
               </Properties>
               <Events>
                 <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="MetodoDePagoActionPerformed"/>
